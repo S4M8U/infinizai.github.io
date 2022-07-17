@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6{
 .wrapper{
     background: linear-gradient(to right, black 55%, #57B8FF 45%);
     padding-top: 20px;
+    overflow: hidden;
 }
 
 /* Header----------------------------------------- */
@@ -49,6 +50,15 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     margin-bottom: 80px;
     padding-bottom: 8px;
+
+    opacity: 0;
+    transform: translateY(-83%);
+}
+
+.header.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
 }
 
 .header__nav__link {
@@ -85,6 +95,17 @@ h1,h2,h3,h4,h5,h6{
 
 /* Social--------------------------------------- */
 
+.social{
+    opacity: 0;
+    transform: translateX(-57%);
+}
+
+.social.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
+}
+
 .social__container {
     position: relative;
     left: -720px;
@@ -120,10 +141,27 @@ h1,h2,h3,h4,h5,h6{
 
 .intro__text {
     width: 50%;
+
+    opacity: 0;
+    transform: translateX(-57%);
+}
+
+.intro__text.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
 }
 
 .intro__image {
-    width: 50%
+    width: 50%;
+    opacity: 0;
+    transform: translateX(65%);
+}
+
+.intro__image.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
 }
 
 .intro__text__subtitle {
@@ -197,6 +235,14 @@ h1,h2,h3,h4,h5,h6{
 .sponsors__inner {
     text-align: center;
     padding: 130px 0;
+    opacity: 0;
+    transform: translateY(30%);
+}
+
+.sponsors__inner.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
 }
 
 .sponsors__line {
@@ -392,7 +438,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .customize__main{
-    padding: 50px;
+    padding: 60px;
 }
 
 .customize__images{
